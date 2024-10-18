@@ -1,6 +1,8 @@
-# Myapp
+# Menu Maker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+This is development code, if you weren't sent here to look at it then you don't need it.
+
+
 
 ## Development server
 

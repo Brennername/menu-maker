@@ -108,7 +108,16 @@ export class WindowContainerComponent {
       this.initialWindowX = this.windowContainer.nativeElement.offsetLeft - 25;
       this.initialWindowY = this.windowContainer.nativeElement.offsetTop - 25;
     }
+   
   }
+
+
+  @HostListener('touchend', ['$event'])
+  onTouchEnd() {
+    this.isDragging = false;
+  }
+  
+  @HostListener('touchmove', ['$event'])
   @HostListener('document:mousemove', ['$event'])
   onDrag(event: MouseEvent) {
     if (this.isDragging) {

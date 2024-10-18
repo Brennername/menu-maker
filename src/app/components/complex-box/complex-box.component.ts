@@ -160,7 +160,7 @@ export class ComplexBoxComponent implements OnInit {
         msg: msg
        },
       enterAnimationDuration: '0ms',
-      exitAnimationDuration: '1000ms',
+      exitAnimationDuration: '200ms',
       autoFocus: true,
       panelClass: 'custom-dialog-container',
       

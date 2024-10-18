@@ -99,7 +99,16 @@ export class WindowContainerComponent {
       this.initialWindowY = this.windowContainer.nativeElement.offsetTop - 25;
     }
   }
-
+  @HostListener('touchstart', ['$event'])
+  onTouchStart(event: TouchEvent) {
+    if (event.target === this.windowHeader.nativeElement) {
+      this.isDragging = true;
+      this.initialMouseX = event.touches[0].clientX;
+      this.initialMouseY = event.touches[0].clientY;
+      this.initialWindowX = this.windowContainer.nativeElement.offsetLeft - 25;
+      this.initialWindowY = this.windowContainer.nativeElement.offsetTop - 25;
+    }
+  }
   @HostListener('document:mousemove', ['$event'])
   onDrag(event: MouseEvent) {
     if (this.isDragging) {

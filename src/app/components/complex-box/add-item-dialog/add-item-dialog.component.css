@@ -1,17 +1,20 @@
 .overlay {
-  position: fixed;
-  top: calc(50% - 25vh);
-  left: calc(50% - 25vw);
-  width: 25vw;
-  height: 25vh;
-  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+  position: relative;
+  
+  top: -15px;
+  left: calc(50%);
+   transform: translate(-50%, -50%);
+  
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.877); /* Darker overlay */
   /* Adjust the opacity as needed */
   backdrop-filter: blur(5px);
   /* Adjust the blur radius as needed */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it's on top */
+  z-index: 9000; /* Ensure it's on top */
 }
 
 .close-button {
@@ -31,13 +34,16 @@
 }
 
 .add-item-dialog-container {
-  background-color: #222; /* Darker background for contrast */
+  background-color: #333; /* Darker background for contrast */
+  border: 1px solid white;;
   color: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.938);
-  width: 50vw; /* 50% of viewport width */
-  height: 50vh; /* 50% of viewport height */
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.938);
+  width: fit-content;
+  height: fit-content;
+  min-width: 300px;
+  min-height: 200px;
   animation: fadeIn 0.3s ease-in-out;
   animation-fill-mode: forwards;
   flex: 1;
@@ -45,6 +51,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(5px);
+  /* Adjust the blur radius as needed */
 }
 
 @keyframes fadeIn {

@@ -117,7 +117,7 @@ export class WindowContainerComponent {
     this.isDragging = false;
   }
   
-  @HostListener('touchmove', ['$event'])
+ 
   @HostListener('document:mousemove', ['$event'])
   onDrag(event: MouseEvent) {
     if (this.isDragging) {

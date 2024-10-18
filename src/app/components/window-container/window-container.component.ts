@@ -99,7 +99,7 @@ export class WindowContainerComponent {
       this.initialWindowY = this.windowContainer.nativeElement.offsetTop - 25;
     }
   }
-  @HostListener('touchstart', ['$event'])
+  @HostListener('dragstart', ['$event'])
   onTouchStart(event: TouchEvent) {
     if (event.target === this.windowHeader.nativeElement) {
       this.isDragging = true;
@@ -112,7 +112,7 @@ export class WindowContainerComponent {
   }
 
 
-  @HostListener('touchend', ['$event'])
+  @HostListener('dragend', ['$event'])
   onTouchEnd() {
     this.isDragging = false;
   }

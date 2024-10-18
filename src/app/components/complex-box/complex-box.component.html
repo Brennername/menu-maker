@@ -1,0 +1,46 @@
+
+
+<div class="container">
+  <select class="itemList" size="5">
+
+    @if (items$ | async )
+    {
+    
+        @for (item of items; track item) {
+          <option value="{{ item }}" (click)="onItemSelected(item)">
+            {{ item }}
+          </option>
+        }
+      }
+  </select>
+  
+  
+  <div class="button-container">
+    <button (click)="toggleAddItemDialog()">Add</button>
+    <div class="empty-space"></div>
+    <button>Change</button>
+    <div class="empty-space"></div>
+    <button (click)="removeItem()">Remove</button>
+    <div class="empty-space"></div>
+    <button class="spinner-container" (click)="moveItemUp()" [disabled]="isSpinning">
+      <span *ngIf="isSpinning" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      <span *ngIf="!isSpinning">&#8679;</span>
+        </button>
+    <div class="empty-space"></div>
+        <button class="spinner-container" (click)="moveItemDown()" [disabled]="isSpinning">
+     <span *ngIf="isSpinning" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      <span *ngIf="!isSpinning">&#8681;</span>
+        </button>
+    
+
+
+
+  </div>
+  
+  <!-- <ng-template [ngIf]="showAddItemDialog"> -->
+    @if (showAddItemDialog)
+    {
+    <app-add-item-dialog (closeDialog)="addItemDialogClosed()" (itemAdded)="onItemAdded($event)"></app-add-item-dialog>
+    }
+  <!-- </ng-template> -->
+</div> <!-- container -->

@@ -1,0 +1,14 @@
+<div class="">
+<div class="add-item-dialog-container overlay">
+    <button class="close-button" (click)="closePopup()">
+      &times;
+    </button>
+    <h2>Add Item</h2>
+    <form (ngSubmit)="addItem()">
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" [(ngModel)]="newItemName" name="itemName">
+      <button type="submit">Add Item</button>
+    </form>
+  </div>
+
+</div>

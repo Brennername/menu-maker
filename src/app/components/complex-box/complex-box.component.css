@@ -1,0 +1,101 @@
+select {
+    overflow-y: auto;
+    display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 5px;
+  }
+  
+  button {
+    background: repeating-linear-gradient(to left, #333, #444, #333);
+    background-color: #7777778f;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #777777cb;
+    width: 100%;
+    min-width: 90px;
+  }
+  button:hover
+  {
+    background: repeating-radial-gradient(circle, #555, #444);
+  }
+  
+  .button-container
+  {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    flex: 0;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: 5px;
+  }
+  button.itemList.focused
+{
+  border: 1px solid #777;
+}
+  .itemList.focused option:not(:checked) { /* if focused is what you need*/
+    background-color: transparent; /* or your desired background color */
+    color: transparent; /* or your desired text color */
+    border: 1px solid #777;
+  }
+  .itemList.focused option:checked { /* if focused is what you need*/
+    background-color: blue;
+    color: white; /* or your desired text color */
+    
+  }
+  itemList.not-focused option:not(:checked) { /* if focused is what you need*/
+    background-color: transparent; /* or your desired background color */
+    color: transparent; /* or your desired text color */
+  }
+  itemList.not-focused option:checked { /* if focused is what you need*/
+    background-color: blue;
+    color: white; /* or your desired text color */
+  }
+  
+  .itemList
+{
+  display: flex;
+  flex-direction: column;
+  
+  height: fit-content;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #444;
+    color: white;
+    font-size: 14pt;
+   
+    border-radius: 5px;
+    min-height: 14em;
+    min-width: 18em;
+  
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #555;
+  color: white;
+padding: 10px;
+flex: column;
+width: 400px;
+height: 400px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.651);  
+border-radius: 5px;
+}
+.empty-space
+{
+  width: 5px;
+  min-width: 5px;
+  
+}
+.spinner-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  min-height: 30px;
+  min-width: 30px;
+}

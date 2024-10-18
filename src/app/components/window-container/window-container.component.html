@@ -1,0 +1,18 @@
+
+<div class="custom-window" [hidden]="!isVisible" #windowContainer>
+  <div class="window-header" #windowHeader>
+    <span>{{ title }}</span>
+    <button class="close-button" (click)="closeWindow()">X</button>
+  </div>
+    
+  <div class="inner-container">
+    
+    
+    <ng-template class="window-content" #windowContent>
+    
+    </ng-template>
+    
+    
+    </div>
+    <div class="footer"><div class="window-menu-button"></div></div>
+  </div>

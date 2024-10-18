@@ -1,0 +1,58 @@
+.overlay {
+  position: fixed;
+  top: calc(50% - 25vh);
+  left: calc(50% - 25vw);
+  width: 50vw;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+  /* Adjust the opacity as needed */
+  backdrop-filter: blur(5px);
+  /* Adjust the blur radius as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  &:hover {
+    color: rgba(181, 193, 233, 0.897);
+  }
+
+}
+
+.add-item-dialog-container {
+  background-color: #222; /* Darker background for contrast */
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.938);
+  width: 50vw; /* 50% of viewport width */
+  height: 50vh; /* 50% of viewport height */
+  animation: fadeIn 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

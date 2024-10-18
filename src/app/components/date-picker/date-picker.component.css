@@ -1,0 +1,86 @@
+/* Dark Theme Styles */
+.container { 
+  display: flex; 
+  flex: 1 1 auto;
+  align-items: center; 
+  height: fit-content;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  background: repeating-linear-gradient(to bottom #333,#555, #333); 
+  padding: 5px; 
+  margin: 0px; 
+  margin-bottom: 0px;
+  border-radius: 8px; 
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.651);
+  flex-wrap: nowrap; 
+  justify-content: center; 
+  border: 1px solid #555;
+}
+.container-fluid
+{
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.651);
+  border: 1px solid #555;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  height: 100%;
+  width: 100%;
+  
+}
+.form-control, .today-button { 
+  color: #eee;
+  border:1px solid #666;
+  padding:2px;
+  border-radius:8px;
+  text-align:center;
+  height: 30px;
+  flex: 1; /* Take up available space */
+  width: 100%;
+  margin: 5px; /* Add some margin for spacing */
+}
+.form-control {
+ /* background: repeating-linear-gradient(to right, #333333c2, #444444d0, #555555ad); */
+ background: repeating-linear-gradient(to left, #333, #444, #333);
+}
+.button-container{
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex: 1;
+}
+.space-flex {
+  flex: 1; /* Allow the spacer to grow and shrink */
+  min-width: 10px; /* Set a minimum width for the spacer */
+}
+.today-button { 
+  /* background: repeating-linear-gradient(to right, #555555ad, #444444d0, #333333c2); */
+  background: repeating-linear-gradient(to left, #333, #444, #333);
+}
+.form-control:hover, .today-button:hover
+{
+    background: repeating-radial-gradient(#555, #444, #333);  
+}
+.row { display: flex; flex-wrap: nowrap; 
+
+flex: 1;
+}
+.container-wrapper
+{
+  width: 100%;
+  padding-bottom: 0;
+}
+.form-group { width: 100%; }
+.input-group-prepend { width: 100%;}
+
+.input-group { width: 100%; } 
+
+h4 /* Selects all h4 elements */
+{
+  text-align: center;
+  
+  
+  
+}

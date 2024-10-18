@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  gap: 10px;
+  height: fit-content;
+  width: fit-content;
+  place-content: center;
+  align-items: center;
+}
+
+.breakfast, .lunch, .dinner {
+display: flex;
+flex-direction: column;
+
+height: fit-content;
+width: fit-content;
+}
+.empty-space
+{
+  width: 100%;
+  min-width: 5px;
+  
+}
+.empty-box
+{
+  width: 100%;
+  min-width: 10px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  border: 1px solid #555;
+  height: 100%;
+  min-height: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.651);  
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 5px;
+  
+   
+}

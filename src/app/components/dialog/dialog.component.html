@@ -1,0 +1,15 @@
+<div class="dialog-overlay" (click)="closeDialog()"></div>
+<div class="dialog-container">
+  <div class="dialog-content">
+    <div class="dialog-header">
+        {{ data.title }}
+    </div>
+    <div class="dialog-body">
+      <ng-content>{{ data.msg }}</ng-content> 
+    </div>
+    <div class="dialog-footer">
+      <button class="dialog-button" (click)="closeDialog()">OK</button>
+      <!-- Add a cancel button later if needed -->
+    </div>
+  </div>
+</div>

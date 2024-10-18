@@ -1,0 +1,9 @@
+
+<div class="docket-control" [hidden]="!isVisible">
+
+    @for (button of buttons; track button.label)
+  {
+    
+    <button class="docket-button {{button.position}}" (click)="handleButtonClick(button)">{{ button.label }}</button>
+  }
+  </div>

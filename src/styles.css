@@ -1,0 +1,74 @@
+/* Yo%u can add global styles to this file, and also import other style files */
+html, body {
+    
+    background: linear-gradient(to right, #444, #494949, #444);
+    color: rgb(250, 248, 248);
+    border-radius: 10px;
+}
+.bs-datepicker-container
+{
+  right: 100px;
+  border-radius: 10px;
+}
+body .bs-datepicker-container .bs-datepicker-head {
+    background-color: #555;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 2px solid #474747c2;
+    background: repeating-linear-gradient(to right, #333, #444, #555)
+  }
+  body .bs-datepicker-container .bs-datepicker-head * {
+    color: white;
+  }
+select {
+  background-color: #444;
+  color: white;
+  font-size: 14pt;
+  height: 30px;
+  border-radius: 5px;
+}
+  body .bs-datepicker-container .bs-datepicker-body {
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border: 2px solid #474747c2;
+    background-color: #555;
+    background: repeating-linear-gradient(to left, #333, #444, #555)
+  }
+  body .bs-datepicker-container .bs-datepicker-body * {
+    border-radius: 10px;
+    color: white;
+    background: repeating-linear-gradient(circle, #333, #555, #444, #555, #333);
+  }
+  body .bs-datepicker-container {
+    z-index: 5050;
+    border-radius: 10px;
+    border: 2px solid #474747c2;
+    background-color: #333333ee; /* or the background color you want */
+  }
+ 
+  .bs-datepicker-container{
+    border-radius: 10px;
+    border: 2px solid #474747c2;
+    background-color: #333333ee; /* or the background color you want */
+  }
+  body .ng-star-inserted:hover
+  {
+      
+    color: black;
+  }
+  .bs-datepicker-body{
+    border-radius: 10px;
+    border: 2px solid #474747c2;
+    background-color: #333333ee; /* or the background color you want */
+  }
+.bs-datepicker
+{
+border-radius: 10px;
+border: 2px solid #474747c2;
+background-color: #333333ee; /* or the background color you want */
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

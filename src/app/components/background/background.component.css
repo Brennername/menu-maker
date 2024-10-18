@@ -1,0 +1,52 @@
+.gear-icon
+{
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.521);    
+    border: 1px solid rgba(126, 124, 124, 0.808);
+    height:55px;
+    width:55px;
+    border-radius: 25%;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    margin: 2px;
+    background: repeating-radial-gradient(circle at 50% 50%, #333, #444);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.gear-icon:hover
+{
+    border: 1px solid #ffffff86;
+    opacity: 0.9;
+    background: repeating-radial-gradient(circle at 50% 50%, #333, #444);
+    cursor: pointer;
+}
+.gear-icon:active
+{
+    border: 1px solid #fff;
+    background: repeating-radial-gradient(circle at 50% 50%, #333, #eeeaea);
+    cursor: pointer;
+
+    opacity: 0.5;
+}
+.gear-icon:focus
+{
+    outline: none;
+    border: 1px solid #fff;
+    background: repeating-radial-gradient(circle at 50% 50%, #333, #eeeaea);
+    cursor: pointer;
+}
+.container
+{
+    
+    
+    
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0; 
+    position: relative;
+}
+

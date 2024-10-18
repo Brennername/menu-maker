@@ -1,0 +1,92 @@
+.docket-control {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: repeating-linear-gradient(to bottom, #434343, #282828, #434343);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.521); /* Increased shadow intensity and blur */
+    padding: 5px;
+    animation: fade-in 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 50px;
+    width: fit-content;
+    z-index: 1001;
+    
+
+  }
+  .right-button
+  {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .left-button
+  {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .inside-button
+  {
+    
+    border-radius: 5px;
+  }
+
+
+  @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  .docket-control.visible {
+    opacity: 1;
+  }
+  
+  .docket-button {
+    padding: 5px 15px; /* Reduced padding */
+    background: linear-gradient(to right, #666666, #444444);
+    border: none;
+    
+    color: #fff;
+    cursor: pointer;
+    margin: 0 3px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.651);
+    transition: background 0.3s;
+  }
+  
+  .docket-button:hover {
+   background: repeating-linear-gradient(to right, #5e5f5f, #707070, #434343);
+  }
+  
+  .docket-button:active {
+    background: linear-gradient(to right, #555555, #535353);
+    border: 1px solid white; 
+  }
+  
+  .docket-button:focus {
+    outline: none;
+    border: 1px solid white; 
+  }
+  
+  .docket-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  
+  }
+  
+  .docket-button:hover:disabled,
+  .docket-button:active:disabled,
+  .docket-button:focus:disabled {
+    background: linear-gradient(to right, #666666, #444444);
+  }

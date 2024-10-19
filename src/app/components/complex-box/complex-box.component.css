@@ -35,23 +35,23 @@ select {
 {
   border: 1px solid #777;
 }
-  .itemList.focused option:not(:checked) { /* if focused is what you need*/
-    background-color: transparent; /* or your desired background color */
-    color: white; /* or your desired text color */
+  .itemList.focused option:not(:checked) {
+    background-color: transparent;
+    color: white; 
     border: 1px solid #444;
   }
-  .itemList.focused option:checked { /* if focused is what you need*/
+  .itemList.focused option:checked { 
     background-color: #555;
-    color: white; /* or your desired text color */
+    color: white; 
     
   }
-  itemList.not-focused option:not(:checked) { /* if focused is what you need*/
+  itemList.not-focused option:not(:checked) {
     background-color: #444;
-    color: white; /* or your desired text color */
+    color: white; 
   }
-  itemList.not-focused option:checked { /* if focused is what you need*/
+  itemList.not-focused option:checked { 
     background-color: #555;
-    color: white; /* or your desired text color */
+    color: white; 
   }
   
   .itemList

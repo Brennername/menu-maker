@@ -1,11 +1,14 @@
 .custom-window {
     position: fixed;
+/*
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+*/    
+    /* transform: translate(-50%, -50%); */
+
     z-index: 1000;
-    width: 1280;
-    height: 720;
+    width: fit-content;
+    height: fit-content;
     background-color: #333333;
     border-radius: 10px;
     border: 1px solid #777; /* Or use a gradient like: border-image: linear-gradient(to bottom, #555, #333) 1; */

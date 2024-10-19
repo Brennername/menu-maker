@@ -1,6 +1,14 @@
 
-<div class="custom-window" [hidden]="!isVisible" #windowContainer>
-  <div class="window-header" #windowHeader>
+<div 
+class="custom-window" 
+(cdkDragEnded)="onDragEnd()" 
+cdkDrag 
+[cdkDragFreeDragPosition]="dragPosition" 
+[hidden]="!isVisible" #windowContainer
+> <!--custom-window-->
+
+
+  <div class="window-header" cdkDragHandle #windowHeader>
     <span>{{ title }}</span>
     <button class="close-button" (click)="closeWindow()">X</button>
   </div>

@@ -2,6 +2,11 @@
 
 This is development code, if you weren't sent here to look at it then you don't need it.
 
+## Express on Heroku
+
+This repo has been setup to run in prod mode on heroku, but it is in no way secure or recommended for public use. To run it with ng instead of express you must change the package.json start parameter to reflect which one you want. If you don't know how to do that, then you probably don't want to do that.
+
+## The following is auto generated and may not be accurate instructions
 
 
 ## Development server

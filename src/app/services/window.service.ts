@@ -7,15 +7,17 @@ import { Component, Injectable, Type } from '@angular/core';
       private windowDataSubject = new Subject<{ isVisible: boolean; title: string; content: Type<Component>; }>();
       windowData$ = this.windowDataSubject.asObservable();
       showComponent(content: Type<Component>){
-        this.windowDataSubject.next({ 
-          isVisible: true, 
-          title: content.name.substring(1).replace('Component', ''), 
-          content: content });   
+        // this.windowDataSubject.next({ 
+        //   isVisible: true, 
+        //   title: content.name.substring(1).replace('Component', ''), 
+        //   content: content });   
+          this.showWindow(content.name.substring(1).replace('Component', ''), content);
       }
       showWindow(title: string, content: Type<Component>) {
        console.log("Entering showWindow(" + title + ", " + content.name + " )");
        this.windowData$.subscribe(data => console.log(data.isVisible));
         this.windowDataSubject.next({ isVisible: true, title: title, content: content });
+      
       }
       closeWindow(target: Type<any>) {
         this.windowDataSubject.next({ isVisible: false, title: '', content: target });

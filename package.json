@@ -8,7 +8,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "startDeploy": "ng serve --configuration production",
+    "startNg": "ng serve --configuration production",
     "postinstall": "ng build --output-path menu-maker --aot --configuration production",
     "build": "ng build",
     "heroku-postbuild": "ng build",

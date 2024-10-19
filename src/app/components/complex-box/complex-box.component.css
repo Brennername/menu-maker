@@ -37,20 +37,20 @@ select {
 }
   .itemList.focused option:not(:checked) { /* if focused is what you need*/
     background-color: transparent; /* or your desired background color */
-    color: transparent; /* or your desired text color */
-    border: 1px solid #777;
+    color: white; /* or your desired text color */
+    border: 1px solid #444;
   }
   .itemList.focused option:checked { /* if focused is what you need*/
-    background-color: blue;
+    background-color: #555;
     color: white; /* or your desired text color */
     
   }
   itemList.not-focused option:not(:checked) { /* if focused is what you need*/
-    background-color: transparent; /* or your desired background color */
-    color: transparent; /* or your desired text color */
+    background-color: #444;
+    color: white; /* or your desired text color */
   }
   itemList.not-focused option:checked { /* if focused is what you need*/
-    background-color: blue;
+    background-color: #555;
     color: white; /* or your desired text color */
   }
   

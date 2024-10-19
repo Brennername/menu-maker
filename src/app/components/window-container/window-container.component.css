@@ -93,7 +93,7 @@ padding-bottom: 0;
   }
   .close-button:hover {
     border: 1px solid grey;
-    background-color: #d3d3d3; /* Slightly Darker Grey */
+    background-color: #d3d3d3;
   }
 
   .window-header {
@@ -116,7 +116,7 @@ padding-bottom: 0;
   .window-content {
     padding: 5px;
     margin: 5px;
-    
+   color: white!; 
   }
   
   .window-resize-handle {

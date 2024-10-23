@@ -56,7 +56,7 @@ select {
   body .ng-star-inserted:hover
   {
       
-    color: black;
+    color: white;
   }
   .bs-datepicker-body{
     border-radius: 10px;

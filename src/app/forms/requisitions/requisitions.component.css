@@ -1,0 +1,26 @@
+.flex-container {
+    display: flex;
+    background-color: repeating-linear-gradient(to right, #333, #555, #333);
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container > div {
+    background-color: repeating-linear-gradient(to right, #333, #555, #333);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 10px;
+   
+}
+
+.requisition-list
+{
+min-height: 200px;
+min-width: 200px;
+}
+.requisition-editor
+{
+min-height: 200px;
+min-width: 200px;
+}

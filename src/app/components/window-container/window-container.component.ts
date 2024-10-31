@@ -2,11 +2,12 @@ import { Component, ElementRef, HostListener, Input, Type, ViewChild, ViewContai
 import { WindowService } from '../../services/window.service';
 import { DashboardComponent } from '../../forms/dashboard/dashboard.component';
 import { CdkDrag, DragDropModule } from '@angular/cdk/drag-drop';
+import { ScrollableViewPaneComponent } from "../scrollable-view-pane/scrollable-view-pane.component";
 
 @Component({
   selector: 'app-window-container',
   standalone: true,
-  imports: [DashboardComponent, DragDropModule ],
+  imports: [DashboardComponent, DragDropModule, ScrollableViewPaneComponent],
   templateUrl: './window-container.component.html',
   styleUrl: './window-container.component.css'
 })
@@ -191,7 +192,7 @@ public centerDiv(debugMsg?: string) {
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
   const divWidth = this.windowContainer.nativeElement.offsetWidth;
-  const divHeight = this.windowContainer.nativeElement.offsetHeight;
+  const divHeight = this.windowContainer.nativeElement.offsetHeight+50;
 
   this.dragPosition = {
     x: (((viewportWidth) / 2)-(divWidth/2)),

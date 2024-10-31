@@ -11,12 +11,13 @@ import { RequisitionsComponent } from './forms/requisitions/requisitions.compone
 import { ReportsModule } from './reports/reports.module';
 import { ViewReportComponent } from './reports/view-report/view-report.component';
 import { InventoryComponent } from './forms/inventory/inventory.component';
+import { ScrollableViewPaneComponent } from './components/scrollable-view-pane/scrollable-view-pane.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DocketControlComponent, WindowContainerComponent, DatePickerComponent ],
+  imports: [RouterOutlet, DocketControlComponent, WindowContainerComponent, DatePickerComponent, ScrollableViewPaneComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   providers: [ ]
@@ -41,6 +42,7 @@ constructor(private windowService: WindowService){}
     { label: 'Requisitions', onClick: () => this.windowService.showComponent(RequisitionsComponent), isDisabled: false, position: "" },
     { label: 'Inventory', onClick: () => this.windowService.showComponent(InventoryComponent), isDisabled:false, position: "" },
     { label: 'Reports', onClick: () => this.windowService.showComponent(ViewReportComponent), isDisabled:false, position: "" },
+    // { label: 'ViewPane', onClick: () => this.windowService.showComponent(ScrollableViewPaneComponent), isDisabled:false, position: "" },
 
   ];
   ngOnInit() {

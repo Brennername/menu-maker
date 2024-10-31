@@ -3,24 +3,84 @@
     background-color: repeating-linear-gradient(to right, #333, #555, #333);
     justify-content: center;
     align-items: center;
+    height: fit-content;
+    width: fit-content;
 }
 
 .flex-container > div {
     background-color: repeating-linear-gradient(to right, #333, #555, #333);
-    margin: 10px;
+    
     padding: 10px;
-    border: 1px solid #777;
+    margin: 10px;
     border-radius: 10px;
    
 }
-
+.flex-item
+{
+    background-color: repeating-linear-gradient(to right, #333, #555, #333);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #777;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.651);  
+    border-radius: 10px;
+}
 .requisition-list
 {
+
+padding: 10px;
 min-height: 200px;
 min-width: 200px;
 }
 .requisition-editor
 {
-min-height: 200px;
+margin: 0;
+    min-height: 200px;
 min-width: 200px;
 }
+
+.hbox
+{
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    margin: 10px;
+    
+    
+}
+.vbox
+{
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    
+   
+}
+button
+{
+    
+
+    background: linear-gradient(to right, #666666, #444444);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 3px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.651);
+    
+
+
+}
+
+button:hover
+{
+    background: repeating-linear-gradient(to right, #5e5f5f, #707070, #434343);
+}
+.requisition-button-bar
+{
+    min-height: 25px;
+    min-width: 200px;
+}
+
+button:active {
+    background: linear-gradient(to right, #555555, #535353);
+    border: 1px solid white; 
+  }

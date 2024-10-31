@@ -9,7 +9,9 @@
                   [minDate]="minDate"
                   [maxDate]="maxDate"
                   #dp="bsDatepicker"
-                  bsDatepicker [(bsValue)]="selectedDate">
+                  placeholder="Datepicker"
+                  bsDatepicker [(bsValue)]="selectedDate"
+                  [bsConfig]="{ adaptivePosition: true, containerClass: 'theme-dark-blue' }">
 
         <button class="btn btn-outline-secondary today-button" 
                 (click)="onTodayClicked()">

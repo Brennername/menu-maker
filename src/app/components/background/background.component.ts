@@ -3,10 +3,11 @@ import { WindowService } from '../../services/window.service';
 import { SettingsComponent } from '../settings/settings.component';
 
 import { Type } from '@angular/core';
+import { ScrollableViewPaneComponent } from "../scrollable-view-pane/scrollable-view-pane.component";
 @Component({
   selector: 'app-background',
   standalone: true,
-  imports: [],
+  imports: [ScrollableViewPaneComponent],
   templateUrl: './background.component.html',
   styleUrl: './background.component.css'
 })

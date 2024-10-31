@@ -12,8 +12,8 @@ select {
     border-radius: 5px;
     color: white;
     border: 1px solid #777777cb;
-    width: 100%;
-    min-width: 90px;
+    width: fit-content;
+    
   }
   button:hover
   {
@@ -68,7 +68,7 @@ select {
    
     border-radius: 5px;
     min-height: 14em;
-    min-width: 18em;
+    min-width: fit-content;
   
 }
 .container {
@@ -77,9 +77,10 @@ select {
   border: 1px solid #555;
   color: white;
 padding: 10px;
-flex: column;
-width: 400px;
-height: 400px;
+
+
+
+
 box-shadow: 0 3px 10px rgba(0, 0, 0, 0.651);  
 border-radius: 5px;
 }

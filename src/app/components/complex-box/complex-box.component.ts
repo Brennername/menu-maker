@@ -9,6 +9,7 @@ import { MatDialog, MatDialogConfig, MatDialogContainer, MatDialogModule, MatDia
 import { MatButtonModule } from '@angular/material/button';
 import { DialogComponent } from '../dialog/dialog.component';
 import { DialogRef } from '@angular/cdk/dialog';
+import { OverlayPositionBuilder } from '@angular/cdk/overlay';
 
 
 
@@ -153,27 +154,57 @@ export class ComplexBoxComponent implements OnInit {
     }
   }
 
-  openDialog(msg: string, title?: string): MatDialogRef<DialogComponent> {
-    const dialogRef = this.dialog.open(DialogComponent, {
-      width: '250px',
-      data: { title: title || "Information",
-        msg: msg
-       },
-      enterAnimationDuration: '0ms',
-      exitAnimationDuration: '200ms',
-      autoFocus: true,
-      panelClass: 'custom-dialog-container',
-      
-      backdropClass: 'custom-dialog-backdrop',
-      hasBackdrop: true,
-      
-    });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-    return dialogRef;
+
+
+
+
+  openDialog(msg: string, title?: string, positionRelativeTo?: HTMLElement): MatDialogRef<DialogComponent> {
+    const config = new MatDialogConfig();
+    config.width = '250px'; // Adjust width as needed
+    config.data = { title: title || "Information", msg: msg };
+    config.enterAnimationDuration = '0ms';
+    config.exitAnimationDuration = '200ms';
+    config.autoFocus = true;
+    config.panelClass = 'custom-dialog-container';
+  
+    // New: Handle backdrop and positioning based on arguments
+    if (positionRelativeTo) {
+      console.log("position is relative to");
+      config.hasBackdrop = false; // No backdrop if using relative placement
+      config.position =  {left: '${positionRelativeTo.getBoundingClientRect().left}px', top: '${positionRelativeTo.getBoundingClientRect().top +50}px'};
+    } else {
+      config.hasBackdrop = true;
+      config.backdropClass = 'custom-dialog-backdrop';
+    }
+  
+    return this.dialog.open(DialogComponent, config);
   }
+  
+  
+
+
+  // openDialog(msg: string, title?: string): MatDialogRef<DialogComponent> {
+  //   const dialogRef = this.dialog.open(DialogComponent, {
+  //     width: '250px',
+  //     data: { title: title || "Information",
+  //       msg: msg
+  //      },
+  //     enterAnimationDuration: '0ms',
+  //     exitAnimationDuration: '200ms',
+  //     autoFocus: true,
+  //     panelClass: 'custom-dialog-container',
+      
+  //     backdropClass: 'custom-dialog-backdrop',
+  //     hasBackdrop: true,
+      
+  //   });
+
+  //   dialogRef.afterClosed().subscribe(result => {
+  //     console.log('The dialog was closed');
+  //   });
+  //   return dialogRef;
+  // }
   closeDialog()
   {
     this.dialogRef.close();

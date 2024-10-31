@@ -1,0 +1,39 @@
+
+<!-- 
+<div class="rounded-scrollbars">
+<div class="viewport viewport-a">
+
+    <span class="box tl">Top Left</span>
+    <span class="box tr">Top Right</span>
+    <span class="box bl">Bottom Left</span>
+    <span class="box br">Bottom Right</span>
+
+    <p>Yay, content!</p><p>Yay, content!</p><p>Yay, content!</p><p>Yay, content!</p>
+    <p>Yay, content!</p><p>Yay, content!</p><p>Yay, content!</p><p>Yay, content!</p>
+    <p>Yay, content!</p><p>Yay, content!</p><p>Yay, content!</p><p>Yay, content!</p>
+    <p>Yay, content!</p><p>Yay, content!</p><p>Yay, content!</p><p>Yay, content!</p>
+
+</div>
+</div> -->
+<!-- ---------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------- -->
+
+
+
+<div class="rounded-scrollbars">
+<div class="viewport viewport-b">
+    <!--
+        By wrapping the content in a non-overflow container, we create an anchoring
+        box that is sized to the content, not to the viewport.
+    -->
+    
+    <div class="viewport-wrapper">
+      
+        <div class="scrollable-view-pane">
+            <ng-content></ng-content>
+          </div>
+
+    </div>
+
+</div>
+</div>

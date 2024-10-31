@@ -1,10 +1,10 @@
 .overlay {
-  position: relative;
-  
-  top: -15px;
-  left: calc(50%);
+  /* Position relative to the parent */
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
    transform: translate(-50%, -50%);
-  
+   */
   width: fit-content;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.877); /* Darker overlay */
@@ -16,6 +16,8 @@
   align-items: center;
   z-index: 9000; /* Ensure it's on top */
 }
+
+
 
 .close-button {
   position: absolute;
@@ -42,8 +44,8 @@
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.938);
   width: fit-content;
   height: fit-content;
-  min-width: 300px;
-  min-height: 200px;
+  min-width: 200px;
+  min-height: 100px;
   animation: fadeIn 0.3s ease-in-out;
   animation-fill-mode: forwards;
   flex: 1;

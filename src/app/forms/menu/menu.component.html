@@ -1,32 +1,49 @@
-<div class="grid-container">
+
+
+
+<app-scrollable-view-pane>  
+<div class="vbox container">
   
-  <div class="grid-item empty-box">
+  <div clss="hbox">
+    
+  <div class="menu-maker-box">
     <h4>Menu Maker</h4>
-    <br/>
-    Select the date and line then add items to the menu.
-  
-  </div>
-    <div class="grid-item date-picker">
-    <app-date-picker></app-date-picker>
-  </div>
-  
-  <div class="grid-item line-type">
+      <br/>
+        <p class="instruction-textbox">
+          Select the date and line then add items to the menu.
+        </p>
+    </div>
+    <div class="">
+      <app-date-picker></app-date-picker>
+    </div>
+    
+    <div class="line-picker">
     <app-line-picker></app-line-picker>
-  </div>
-  
-    <div class="grid-item breakfast">
+    </div>
+</div><!--hbox-->
+
+<div class="hbox">
+
+    <div class="">
     <span><h2>Breakfast</h2>
     <app-complex-box></app-complex-box>
   </span>
   
   </div>
   
-  <div class="grid-item lunch">
+  <div class="">
     <h2>Lunch</h2>
     <app-complex-box></app-complex-box>
   </div>
-  <div class="grid-item dinner">
+  <div class="">
     <h2>Dinner</h2>
     <app-complex-box></app-complex-box>
   </div>
+
 </div>
+
+
+</div>
+</app-scrollable-view-pane>
+
+

@@ -39,6 +39,7 @@ export class AddItemDialogComponent implements OnInit {
   ngAfterViewInit() {
     
     //this.blurBackground();   //this has been commented out because it actually causes dupes
+//this.el.nativeElement.style
     // Trigger change detection manually after the view is initialized
     this.viewRef.markForCheck();
     this.viewRef.detectChanges(); 

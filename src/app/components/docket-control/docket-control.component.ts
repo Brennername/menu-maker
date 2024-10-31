@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ScrollableViewPaneComponent } from "../scrollable-view-pane/scrollable-view-pane.component";
 
 @Component({
   selector: 'app-docket-control',
   standalone: true,
-  imports: [],
+  imports: [ScrollableViewPaneComponent],
   templateUrl: './docket-control.component.html',
   styleUrl: './docket-control.component.css'
 })

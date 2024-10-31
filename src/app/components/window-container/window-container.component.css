@@ -7,26 +7,25 @@
     /* transform: translate(-50%, -50%); */
 
     z-index: 1000;
-    width: fit-content;
-    height: fit-content;
     background-color: #333333;
     border-radius: 10px;
     border: 1px solid #777; /* Or use a gradient like: border-image: linear-gradient(to bottom, #555, #333) 1; */
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.555);
-    min-width: fit-content;
-    min-height: fit-content;
+  
     animation: fadeIn 0.3s ease-in-out forwards;
-    margin: 25px;
-    
-    flex: 1 1 auto;
+    /* margin: 25px; */
+ width: fit-content;
+ height: fit-content;
+   
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
     padding-bottom: 0;
   }
   .inner-container
   {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 margin: 10px;
 margin-left: 7px;
 padding: 5px;
@@ -43,7 +42,7 @@ padding-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
     min-width: 5px;
     min-height: 32px;
     padding: 10px;
